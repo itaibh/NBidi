@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <IsPackable>true</IsPackable>
+    <PackOnBuild>true</PackOnBuild>
+    <Title>NBidi</Title>
+    <Product>NBidi</Product>
+    <Author>Itai Bar-Haim</Author>
+    <Copyright>Copyright © 2024 Itai Bar-Haim</Copyright>
+    <Version>1.2.1.1</Version>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="CompressionTree/**/*.cs" />
+    <Compile Remove="NBidiTests/**/*.cs" />
+    <Compile Remove="UnicodeDataCodeGenerator/**/*.cs" />
+  </ItemGroup>
+
+</Project>

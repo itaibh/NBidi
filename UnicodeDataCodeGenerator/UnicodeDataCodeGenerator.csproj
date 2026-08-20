@@ -5,14 +5,13 @@
     <TargetFramework>net10.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <Title>CompressionTree</Title>
-    <Product>CompressionTree</Product>
+    <Title>NBidi</Title>
+    <Product>NBidi</Product>
     <Author>Itai Bar-Haim</Author>
     <Copyright>Copyright © 2024 Itai Bar-Haim</Copyright>
   </PropertyGroup>
-  
+
   <ItemGroup>
     <ProjectReference Include="../NBidi.csproj" />
   </ItemGroup>
-
 </Project>

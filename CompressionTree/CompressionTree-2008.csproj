@@ -1,34 +1,29 @@
-﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <ProjectGuid>{98F8683C-17C6-44E7-A3B2-D2FF4FB4EB2B}</ProjectGuid>
+    <ProjectGuid>{CB5A672C-7147-41C9-8A9F-CE03AED7CE09}</ProjectGuid>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <OutputType>Exe</OutputType>
-    <RootNamespace>UnicodeDataCodeGenerator</RootNamespace>
-    <AssemblyName>UnicodeDataCodeGenerator</AssemblyName>
+    <RootNamespace>CompressionTree</RootNamespace>
+    <AssemblyName>CompressionTree</AssemblyName>
     <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
     <NoStdLib>False</NoStdLib>
     <WarningLevel>4</WarningLevel>
     <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
-    <FileUpgradeFlags>
-    </FileUpgradeFlags>
-    <OldToolsVersion>2.0</OldToolsVersion>
-    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
-    <UpgradeBackupLocation>
-    </UpgradeBackupLocation>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <OutputPath>bin\Debug\</OutputPath>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>Full</DebugType>
+    <Optimize>False</Optimize>
     <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
-    <Optimize>False</Optimize>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
     <OutputPath>bin\Release\</OutputPath>
     <DebugSymbols>False</DebugSymbols>
     <DebugType>None</DebugType>
+    <Optimize>True</Optimize>
     <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
     <DefineConstants>TRACE</DefineConstants>
   </PropertyGroup>
@@ -42,27 +37,17 @@
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.Targets" />
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Main.cs" />
-    <Compile Include="UnicodeArabicShapingCodeGenerator.cs" />
-    <Compile Include="UnicodeDataCodeGenerator.cs" />
-    <Compile Include="UnicodeMirroringCodeGenerator.cs" />
-    <Content Include="UnicodeData.txt">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <None Include="ArabicShaping.txt">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="BidiMirroring.txt">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="CompressionTree.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\NBidi-2005.csproj">
+    <ProjectReference Include="..\NBidi.csproj">
       <Project>{7E96C9A3-34EB-467E-B505-9FCBBD845949}</Project>
-      <Name>NBidi-2005</Name>
+      <Name>NBidi</Name>
     </ProjectReference>
   </ItemGroup>
 </Project>

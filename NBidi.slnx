@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="NBidi.csproj" />
+  <Project Path="CompressionTree/CompressionTree.csproj" />
+  <Project Path="NBidiTests/NBidiTests.csproj" />
+  <Project Path="UnicodeDataCodeGenerator/UnicodeDataCodeGenerator.csproj" />
+</Solution>
