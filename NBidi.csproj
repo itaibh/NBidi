@@ -10,6 +10,8 @@
     <Product>NBidi</Product>
     <Author>Itai Bar-Haim</Author>
     <Copyright>Copyright © 2024 Itai Bar-Haim</Copyright>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
     <Version>1.2.1.1</Version>
   </PropertyGroup>
 
@@ -17,6 +19,7 @@
     <Compile Remove="CompressionTree/**/*.cs" />
     <Compile Remove="NBidiTests/**/*.cs" />
     <Compile Remove="UnicodeDataCodeGenerator/**/*.cs" />
+    <None Include="README.md" Pack="true" PackagePath="\"/>
   </ItemGroup>
 
 </Project>
